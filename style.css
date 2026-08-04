@@ -8,11 +8,13 @@
     max-width: 1380px;
     margin: 0 auto;
 }
-
 /* header */
 
 .container {
     margin-top: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
 }
 header {
     display: flex;
@@ -49,7 +51,7 @@ nav ul {
     width: 158px;
     height: 60px;
     border-radius: 40px;
-    border:1px solid gray Color;
+    border:1px solid gray;
     background-color: #FEFEFF;
 }
 .hamburger {
@@ -61,25 +63,27 @@ nav ul {
 
 .one {
     background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);   
-    height: 617px;  
+    max-height: 617px;
     border-radius: 15px;
-    display: flex;
+     display: flex;
+    /* flex-wrap: wrap-reverse; */
     margin-top: 40px;
+    
 }
-.text {
+.one .text {
     margin-top: 80px;
     margin-left: 40px;
 }
 .image img {
     padding-left: 75px;
 }
-.text p {
+.one p {
     width: 435px;
     height: 19px;
     line-height: 120%;
     margin: 20px 0px;
 }
-.text h1 {
+.one h1 {
     width: 479px;
     height: 160px;
     font-weight: 600;
@@ -103,6 +107,194 @@ nav ul {
     right: 147px;
 }
 
+/* section two */
+
+.two p {
+    width: 218px;
+    height: 19px;
+    text-align: center;
+    margin-top: 100px;
+}
+.two h1 {
+    width: 788px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+.three {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+    width: 1307px;
+    /* height: 225px; */
+}
+.three .card {
+    width: 329px;
+    height: 225px;
+    flex-wrap: wrap;
+}
+.three h1 {
+    width: 254px;
+    height: 34px;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+.three p {
+    width: 329px;
+    height: 72px;
+}
+.four {
+    margin-top: 140px;
+}
+.four h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.five {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    margin-top: 60px;
+}
+.five h1 {
+    width: 253px;
+    height: 25px;
+    font-size: 21px;
+    font-weight: 600px;
+    margin: 15px 0px 15px 20px;
+}
+.five p {
+    width: 329px;
+    height: 48px;
+    line-height: 24px;
+     margin: 15px 0px 15px 20px;
+
+}
+.stars {
+    margin-left: 20px;
+}
+.starfill {
+    color: #F59914;
+}
+.starcavity {
+    color: #9B9B9B;
+
+}
+.stars span {
+    margin-left: 10px;
+}
+.five .card {
+    border: 1px solid #BEBEBE;
+    width: 447px;
+    height: 438px;
+    border-radius: 14px;
+}
+.six h1 {
+    width: 785px;
+    height: 120px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 80px;
+}
+.seven {
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 1245px;
+    height: 577px;
+    margin: 76px 0px 0px 70px;
+
+}
+.seven h1 {
+    width: 497px;
+    height: 46px;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.seven p {
+    width: 474px;
+    margin: 30px 0px 40px 0px;
+}
+.seven div {
+    margin: 0px;
+}
+.plus span {
+    width: 108px;
+    height: 80pv;
+    font-weight: 600;
+    font-size: 67px;
+    padding-right: 100px;
+
+}
+.minus span{
+    padding-right: 130px;
+
+}
+.std {
+    padding-left: 25px;
+}
+.seven button {
+    width: 153px;
+    height: 60px;
+    border-radius: 40px;
+    padding-top: 15px 35px ;
+    gap: 10px;
+}
+.black-btn {
+    background-color: #1F1F1F;
+    color: white;
+    border: 1px solid #1F1F1F;
+    margin: 0px 20px 50px 0px;
+}
+.white-btn {
+    background-color: white;
+    border: 1px solid #BEBEBE;
+}
+
+.eight{
+    margin-top: 150px;
+    max-height: 457px;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-content:  center;
+}
+.eight h1{
+    width: 642px;
+    height: 60px;
+    font-size: 50px;
+    margin: 0px;
+   
+}
+.eight p{
+    width: 526px;
+    height: 96px;
+    line-height: 24px;
+    margin: 0px;
+}
+.eight .image{
+    align-self: center;
+    /* height: 557px; */
+}
+ .eight .text {
+    margin-top: 0%;
+    height: 457px;
+ }
+
+
+
+   
+
+
+
+
+
 
 
 
@@ -110,7 +302,53 @@ nav ul {
 
 
 /* media  */
-@media only screen and (max-width: 1340px){
+@media only screen and (max-width:1393px) {
+    .image img {
+        width: 700px;
+        top: 80px;
+    }
+    .one {
+        max-height: 500px;
+    }
+}
+@media only screen and (max-width:1258px) {
+    .image img {
+        width: 550px;
+        top: 80px;
+    }
+    .one {
+        max-height: 350px;
+    }
+    .text {
+        margin-top: 20px;
+    }
+    .one h1 {
+        width: 600px;
+        
+        height: 100px;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 100%;
+    }
+    .text p {
+        width: 370px;
+        height: 11px;
+        line-height: 90%;
+        margin-top: 0px;  
+    }
+    .one input {
+        width: 375px;
+    
+    }
+
+}
+/* 
+@media only screen and (max-width:1240px) {
+    .one img {
+        width: 500px;
+        top: 80px;
+    }
+}
     .image img {
         width: 700px;
         margin-top: 80px;
@@ -148,35 +386,35 @@ nav ul {
     }
     .one input {
         width: 375px;
-        
-       
+    
     }
 
-}
-@media only screen and (max-width: 1190px){
+} */
+ @media only screen and (max-width: 1190px){
     .image img {
         width: 450px;
         
     }
     .one {
-        height: 400px;
+        height: 300px;
         margin-top: 15px;
     }
-    .text {
-        margin-top: 30px;
+    .one .text {
+        margin-top: 40px;
     }
-    .text h1 {
+    .one h1 {
         width: 500px;
-        
-        height: 80px;
+        margin-bottom: 20px;
+        height: 40px;
         font-weight: 500;
-        font-size: 40 px;
+        font-size: 40px;
+        margin-top: 0%;
     }
     .text p {
         width: 300px;
         height: 8px;
         line-height: 100%;
-        margin-top: 70px;  
+        margin-top: 20px;  
     }
     .one input {
         height: 50px;
@@ -195,4 +433,10 @@ nav ul {
         display: block;
     }
 
-}
+} */
+ /* @media only screen and (max-width:1240px) {
+    .one img {
+        width: 500px;
+        top: 80px;
+    }
+} */
