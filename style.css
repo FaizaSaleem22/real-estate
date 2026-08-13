@@ -68,43 +68,48 @@ nav ul {
     background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);   
     height: 617px;
     border-radius: 15px;
-     display: flex;
+    display: flex;
+    margin-top: 30px;
+    /* align-items: center; */
     
-    margin-top: 40px;
-    
 }
-.one .text {
-    margin-top: 80px;
-    margin-left: 40px;
-}
-.image img {
-    padding-left: 75px;
-}
-.one p {
+/* .card img {
+    margin-top: 100px;
+} */
+.card .welcome {
+    padding-left: 50px;
     width: 435px;
-    height: 19px;
+    /* height: 19px; */
     line-height: 120%;
-    margin: 20px 0px;
+    margin: 50px 0px 20px 0px;
+
 }
-.one h1 {
-    width: 479px;
-    height: 160px;
+.card h1 {
+    padding-left: 30px;
+    width: 550px;
+    /* height: 160px; */
     font-weight: 600;
     font-size: 67px;
     line-height: 120%;
 }
-.input {  
+.card p {
+    padding-left: 50px;
+    margin-top: 30px;
+}
+.input-field {  
     position: absolute;
+    margin-left: 50px;
    
 }
-.one input {
+.input-field input {
     border: none;
     border-radius: 40px;
-     width: 438px;
-    padding-left: 20px;
-    height: 60px;
+    width: 438px;
+    /* padding-left: 20px; */
+    /* height: 60px; */
+    padding: 17px;
 }
-.input img {
+.get-btn {
     position: relative;
     top: 25px;
     right: 147px;
@@ -307,8 +312,8 @@ nav ul {
 
 /* media  */
 @media only screen and (max-width:1393px) {
-    .image img {
-        width: 700px;
+    .house {
+        width: 650px;
       
     }
     .one {
@@ -316,36 +321,51 @@ nav ul {
         width: 1220px;
     }
 }
-@media only screen and (max-width:1258px) {
-    .image img {
-        width: 550px;
+@media only screen and (max-width:1257px) {
+    .house {
+        width: 450px;
         top: 80px;
     }
     .one {
         max-height: 350px;
         width: 1190px;
+        justify-content: space-between;
 
     }
-    .text {
-        margin-top: 20px;
+    .card .card1 {
+        margin-left: 0px;
+        margin-right: 0px;
     }
+    .card1 {
+        padding-left: 200px;
+    }
+    /* .text {
+        margin-top: 20px;
+    } */
     .one h1 {
-        width: 600px;
-        
+        width: 500px;
+        margin: 0px 20px;
         height: 100px;
         font-weight: 500;
         font-size: 50px;
         line-height: 100%;
     }
-    .text p {
+    .card p {
         width: 370px;
         height: 11px;
         line-height: 90%;
-        margin-top: 0px;  
+        margin: 20px 0px;  
     }
-    .one input {
+    .input-field input {
         width: 375px;
+        padding: 10px;
+        margin-top: 30px;
     
+    }
+    .get-btn {
+        height: 50px;
+        top: 20px;
+        right: 100px;
     }
 
 }
@@ -398,9 +418,12 @@ nav ul {
 
 } */
  @media only screen and (max-width: 1208px){
-    .image img {
-        width: 450px;
+    .house {
+        width: 340px;
         
+    }
+    .card1 {
+        padding-left: 110px;
     }
     .one {
         height: 300px;
@@ -440,16 +463,44 @@ nav ul {
     .hamburger {
         display: block;
     }
+    .input-field input {
+        padding-top: 8px;
+    }
 
 }
  @media only screen and (max-width: 1007px){
-    header {
-        width: 900px;
+     header {
+        
         height: 70px;
        padding: 0px;
     }
     .one {
         flex-wrap: wrap-reverse;
-        min-height: 300px;
+        /* justify-content: center; */
+        align-items: flex-end;
+        width: 700px;
+        min-height: 600px;
+        margin-left: 100px;
+        margin-right: 0px;
     }
- }
+   
+     .card1 {
+        height: 300px;
+        padding-left: 0px;
+     }
+     .card .welcome {
+        margin-top: 0px;
+     }
+
+}
+ @media only screen and (max-width: 870px){
+    .one {
+        width: 500px;
+        margin-left: 200px;
+    }
+    .card h1 {
+        width: 480px;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+}
