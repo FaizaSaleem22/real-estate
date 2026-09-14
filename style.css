@@ -6,7 +6,6 @@
     font-style: normal;
     font-size: 16px;
     max-width: 1380px;
-    
     margin: 0 auto;
 }
 /* header */
@@ -14,9 +13,7 @@
 .container {
     margin-top: 40px;
     overflow-y: hidden;
-    /* overflow-x: hidden; */
-    
-   
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -26,12 +23,9 @@ header {
     background-color: #FAFAFA;
     border-radius: 70px;
     padding: 0px 30px;
-    
-
 }
 nav {
     display: flex;
-    /* height: 60px; */
     align-items: center;
 }
 nav ul {
@@ -66,53 +60,55 @@ nav ul {
 
 .one {
     background: linear-gradient(90deg, #C1DEE8 0%, #FBD9B9 100%);   
-    height: 617px;
+    min-height: 100px;
     border-radius: 15px;
     display: flex;
     margin-top: 30px;
-    /* align-items: center; */
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+    margin-left: 30px;
+    
     
 }
-/* .card img {
-    margin-top: 100px;
-} */
+.card1 {
+    max-width: 790px;
+   
+}
+.card1 img {
+    width: 100%;
+}
 .card .welcome {
-    padding-left: 50px;
-    width: 435px;
-    /* height: 19px; */
     line-height: 120%;
-    margin: 50px 0px 20px 0px;
-
 }
 .card h1 {
-    padding-left: 30px;
     width: 550px;
-    /* height: 160px; */
     font-weight: 600;
     font-size: 67px;
     line-height: 120%;
 }
 .card p {
-    padding-left: 50px;
     margin-top: 30px;
+    width: 500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
 }
 .input-field {  
-    position: absolute;
-    margin-left: 50px;
-   
+    position: relative;
+    margin-bottom: 30px;
 }
 .input-field input {
     border: none;
     border-radius: 40px;
     width: 438px;
-    /* padding-left: 20px; */
-    /* height: 60px; */
     padding: 17px;
 }
 .get-btn {
-    position: relative;
-    top: 25px;
-    right: 147px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
 }
 
 /* section two */
@@ -124,8 +120,6 @@ nav ul {
     margin-top: 100px;
 }
 .two h1 {
-    width: 788px;
-    height: 60px;
     font-size: 50px;
     font-weight: 600;
     text-align: center;
@@ -136,17 +130,15 @@ nav ul {
     flex-wrap: wrap;
     margin-top: 60px;
     justify-content: space-around;
-    width: 1307px;
-    /* height: 225px; */
+    
 }
 .three .card {
     width: 329px;
-    /* height: 225px; */
+    height: 250px;
     margin: 0px;
 }
 .three h1 {
-    width: 254px;
-    /* height: 34px; */
+    padding-left: 0px;
     font-size: 28px;
     font-weight: 600;
     margin: 15px 0px;
@@ -154,6 +146,7 @@ nav ul {
 .three p {
     width: 329px;
     /* height: 72px; */
+    padding-left: 0px;
 }
 .four {
     margin-top: 140px;
@@ -164,26 +157,28 @@ nav ul {
 }
 .five {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    justify-content: center;
+     
     margin-top: 60px;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 .five h1 {
-    width: 253px;
-    height: 25px;
     font-size: 21px;
     font-weight: 600px;
-    margin: 15px 0px 15px 20px;
+    margin: 15px 0px 15px 10px;
 }
 .five p {
     width: 329px;
-    height: 48px;
+    /* height: 48px; */
     line-height: 24px;
-     margin: 15px 0px 15px 20px;
+    margin: 15px 0px 0px 10px;
 
 }
 .stars {
-    margin-left: 20px;
+    margin-left: 10px;
+    padding-top: 15px;
 }
 .starfill {
     color: #F59914;
@@ -198,12 +193,13 @@ nav ul {
 .five .card {
     border: 1px solid #BEBEBE;
     width: 447px;
-    height: 438px;
+    /* height: 438px; */
     border-radius: 14px;
+    margin: 0px;
 }
 .six h1 {
     width: 785px;
-    height: 120px;
+    /* height: 120px; */
     font-size: 50px;
     font-weight: 600;
     text-align: center;
@@ -213,14 +209,9 @@ nav ul {
     display:flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    width: 1245px;
-    height: 577px;
     margin: 76px 0px 0px 70px;
-
 }
 .seven h1 {
-    width: 497px;
-    height: 46px;
     font-size: 38px;
     font-weight: 600;
     margin: 20px 0px;
@@ -233,17 +224,20 @@ nav ul {
 .seven div {
     margin: 0px;
 }
-.plus span {
-    width: 108px;
-    height: 80pv;
+.plus{
+    display: flex;
+    column-gap: 40px;
+}
+.plus h1 {
+    width: 100px;
     font-weight: 600;
     font-size: 67px;
-    padding-right: 100px;
+    margin: 0px;
 
 }
-.minus span{
-    padding-right: 130px;
-
+.plus p {
+    width: 100px;
+    margin: 0px;
 }
 .std {
     padding-left: 25px;
@@ -254,6 +248,12 @@ nav ul {
     border-radius: 40px;
     padding-top: 15px 35px ;
     gap: 10px;
+}
+.img7 {
+    max-width: 550px;
+}
+.img7 img {
+    width: 100%;
 }
 .black-btn {
     background-color: #1F1F1F;
@@ -266,241 +266,57 @@ nav ul {
     border: 1px solid #BEBEBE;
 }
 
-.eight{
-    margin-top: 150px;
-    max-height: 457px;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
-    align-content:  center;
-    margin-bottom: 50px;
-}
-.eight h1{
-    width: 642px;
-    height: 60px;
-    font-size: 50px;
-    margin: 0px;
-   
-}
-.eight p{
-    width: 526px;
-    height: 96px;
-    line-height: 24px;
-    margin: 0px;
-}
-.eight .image{
-    align-self: center;
-    /* height: 557px; */
-}
- .eight .text {
-    margin-top: 0%;
-    height: 457px;
- }
-
-
-
-   
-
-
-
-
-
-
-
-
-
 
 
 /* media  */
-@media only screen and (max-width:1393px) {
-    .house {
-        width: 650px;
-      
+@media only screen and (max-width: 1375px){
+    .four h1 {
+        text-align: center;
     }
-    .one {
-        max-height: 500px;
-        width: 1220px;
-    }
-}
-@media only screen and (max-width:1257px) {
-    .house {
-        width: 450px;
-        top: 80px;
-    }
-    .one {
-        max-height: 350px;
-        width: 1190px;
-        justify-content: space-between;
-
-    }
-    .card .card1 {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .card1 {
-        padding-left: 200px;
-    }
-    /* .text {
-        margin-top: 20px;
-    } */
-    .one h1 {
-        width: 500px;
-        margin: 0px 20px;
-        height: 100px;
-        font-weight: 500;
-        font-size: 50px;
-        line-height: 100%;
-    }
-    .card p {
-        width: 370px;
-        height: 11px;
-        line-height: 90%;
-        margin: 20px 0px;  
-    }
-    .input-field input {
-        width: 375px;
-        padding: 10px;
-        margin-top: 30px;
-    
-    }
-    .get-btn {
-        height: 50px;
-        top: 20px;
-        right: 100px;
-    }
-
-}
-/* 
-@media only screen and (max-width:1240px) {
-    .one img {
-        width: 500px;
-        top: 80px;
-    }
-}
-    .image img {
-        width: 700px;
-        margin-top: 80px;
-    }
-    .one {
-        height: 550px;
+    .four p {
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 1220px){
-    .image img {
-        width: 550px;
-        
-    }
-    .one {
-        height: 450px;
-        margin-top: 20px;
-    }
-    .text {
-        margin-top: 40px;
-    }
-    .text h1 {
-        width: 600px;
-        
-        height: 100px;
-        font-weight: 500;
-        font-size: 50 px;
-        line-height: 100%;
-    }
-    .text p {
-        width: 370px;
-        height: 11px;
-        line-height: 90%;
-        margin-top: 50px;  
-    }
-    .one input {
-        width: 375px;
-    
-    }
 
-} */
- @media only screen and (max-width: 1208px){
-    .house {
-        width: 340px;
-        
-    }
-    .card1 {
-        padding-left: 110px;
-    }
-    .one {
-        height: 300px;
-        margin-top: 15px;
-        width: 990px;
-    }
-    .one .text {
-        margin-top: 40px;
-    }
-    .one h1 {
-        width: 500px;
-        margin-bottom: 20px;
-        height: 40px;
-        font-weight: 500;
-        font-size: 40px;
-        margin-top: 0%;
-    }
-    .text p {
-        width: 300px;
-        height: 8px;
-        line-height: 100%;
-        margin-top: 20px;  
-    }
-    .one input {
-        height: 50px;
-        margin-top: 30px;
-        
-    }
-    .input img {
-        height: 50px;
-        margin-bottom: 6px;
-        padding-left: 50px;
-    }
-    nav {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-    .input-field input {
-        padding-top: 8px;
-    }
-
-}
- @media only screen and (max-width: 1007px){
-     header {
-        
-        height: 70px;
-       padding: 0px;
-    }
+@media only screen and (max-width: 1130px){
     .one {
         flex-wrap: wrap-reverse;
-        /* justify-content: center; */
-        align-items: flex-end;
-        width: 700px;
-        min-height: 600px;
-        margin-left: 100px;
-        margin-right: 0px;
     }
-   
-     .card1 {
-        height: 300px;
-        padding-left: 0px;
-     }
-     .card .welcome {
-        margin-top: 0px;
-     }
-
-}
- @media only screen and (max-width: 870px){
-    .one {
-        width: 500px;
-        margin-left: 200px;
+    .one .card {
+        margin: 0 auto;
     }
-    .card h1 {
-        width: 480px;
-        padding-left: 20px;
-        margin-left: 20px;
+    nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger i {
+        display: block;
+    }
+    .seven{ 
+        justify-content: center;
     }
 }
+@media only screen and (max-width: 802px){
+    .two h1 {
+        width: 550px;
+    }
+    .six h1 {
+        width: 580px;
+    }
+}
+@media only screen and (max-width: 770px) {
+     .one .card {
+        text-align: center;
+     }
+     .get-btn {
+        right: 10px;
+     }
+} 
+/* @media only screen and (max-width: 727px){
+     .plus {
+       flex-direction: column;
+    }
+} */
